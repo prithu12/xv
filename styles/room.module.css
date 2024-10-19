@@ -1,0 +1,17 @@
+.activePlayerContainer {
+  @apply absolute shadow-2xl mx-auto;
+  top: 20px;
+  left: 85rem;
+  height: 40vh;
+  z-index: 100;
+}
+
+.inActivePlayerContainer {
+  @apply absolute w-[90%]  mx-auto;
+  bottom: -10rem;
+  left: 101.6rem;
+  height: 40vh;
+  z-index: 100;
+}
+
+

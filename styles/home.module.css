@@ -1,0 +1,151 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 96rem;
+  /* equivalent to max-w-6xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: black;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 48rem;
+  justify-content: center;
+  align-items: center;
+  /* equivalent to max-w-xl */
+}
+
+.title {
+  font-size: 2.25rem;
+  /* equivalent to text-4xl */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  /* equivalent to text-xl */
+  color: #718096;
+  /* equivalent to text-gray-600 */
+  margin-bottom: 2rem;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* equivalent to space-x-4 */
+}
+
+.newMeetingButton {
+  display: flex;
+  align-items: center;
+  background-color: #2563eb;
+  /* equivalent to bg-blue-600 */
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.375rem;
+  /* equivalent to rounded-md */
+}
+
+.newMeetingButton:hover {
+  background-color: #1d4ed8;
+  /* equivalent to hover:bg-blue-700 */
+}
+
+.enterRoom {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.linkIcon {
+  position: absolute;
+  left: 0.75rem;
+  /* equivalent to left-3 */
+  color: #9CA3AF;
+  /* equivalent to text-gray-400 */
+}
+
+.input {
+  border: 1px solid #D1D5DB;
+  /* equivalent to border-gray-300 */
+  border-radius: 0.375rem;
+  /* equivalent to rounded-md */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2.5rem;
+  /* equivalent to pl-10 */
+  padding-right: 1rem;
+  /* equivalent to pr-4 */
+  width: 16rem;
+  /* equivalent to w-64 */
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3B82F6;
+  /* equivalent to focus:ring-2 focus:ring-blue-500 */
+}
+
+.joinButton {
+  color: #2563eb;
+  /* equivalent to text-blue-600 */
+  font-weight: 500;
+  /* equivalent to font-medium */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.375rem;
+  /* equivalent to rounded-md */
+}
+
+.joinButton:hover {
+  background-color: #EFF6FF;
+  /* equivalent to hover:bg-blue-50 */
+}
+
+.imageContainer {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .imageContainer {
+    display: block;
+  }
+}
+
+.placeholderImage {
+  object-fit: cover;
+  height: 24rem;
+  /* This is equivalent to h-96 in Tailwind CSS */
+  width: 24rem;
+  /* Set a width to make the image a circle */
+  background-image: url('/deaf.jpg');
+  /* Ensure the path is correct */
+  background-size: cover;
+  /* Ensures the image covers the div area */
+  background-position: center;
+  /* Centers the image */
+  background-color: #e5e7eb;
+  /* Equivalent to bg-gray-200 */
+  border-radius: 50%;
+  /* Makes it a circle */
+}
+
+.separatorText {
+  display: none;
+}
